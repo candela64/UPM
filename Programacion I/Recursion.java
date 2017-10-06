@@ -43,7 +43,19 @@ class Recursion {
         return (1+ numeroCifras(n/10));
       }
     }
+   
+    static int sumaCifras (int t){
+      if ( t<10) {
+        return t;
+      }
+      else
+      {
+        return (SumaCifras(t%10)+(t/10));
+      }
+    
+    }
 }
+
   
   
   
@@ -72,9 +84,14 @@ StdOut.println("suma de los cuadrados pares=" + sumaDeCuadradosParesEntre(numero
 StdOut.println("introduce un valor para C");
 int c = StdIn.readInt();
 StdOut.println("Numero de cifras=" + numeroCifras(c));
+StdOut.println("Introduce valor para t");
+int t=StdIn.readInt();
+StdOut.println("la suma de sus cifras es =" + sumaCifras(t));
+
  
 }
 }
+
 
     
     
